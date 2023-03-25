@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/1978cb2604.js" crossorigin="anonymous"></script>
 
     <title>CV Erica Kuhm</title>
 </head>
 
 <body>
     <nav class="sidebar">
-        <header>
+            <!--hamburger menu-->
+            <input type="checkbox" name="hamburguer" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
             <div class="logo-image">
                 <span class="image">
                     <img src="./assets/logo_size.jpg" alt="logo">
@@ -25,8 +29,8 @@
                 </div>
             </div>
 
-            <!-- <i class='bx bx-chevron-right toggle'></i> -->
         </header>
+
 
         <div class="menu-bar">
             <div class="menu">
@@ -58,8 +62,8 @@
             <div class="bottom-mode">
                 <li class="mode">
                     <div class="moon-sun">
-                        <i class="bx bx-moon icon moon"></i>
-                        <i class="bx bx-sun icon sun"></i>
+                        <i class="fas fa-moon icon moon"></i>
+                        <i class="fas fa-sun icon sun"></i>
                     </div>
                     <span class="mode-text text">Dark Mode </span>
 
@@ -82,6 +86,12 @@
             <div class="aboutMe">
                 <h2 id="aboutMe" class="secondTittle">Acerca de mí</h2>
                 <p class="intro">Desarrolladora web innovadora, proactiva y con capacidad para desarrollar páginas web elegantes y pioneras y diseños de aplicaciones para clientes exigentes.<br> Organizada y con capacidad de multitarea con experiencia en programación de proyectos, mejora de diseños y verificación del código. Habilidades de desarrollo web y aplicaciones móviles para una posición estimulante en una compañía moderna, abierta y profesional</p>
+                <div class="aboutMe download">
+                    <a href="./" download>
+                        <button>Descargar CV</button>
+                    </a>
+                </div>
+            
             </div>
 
         </div>
@@ -90,7 +100,7 @@
 
             <div class="experience">
                 <h2 id="experience" class="secondTittle">Experiencia</h2>
-                <div>
+                <div class="experiencie list">
                     <ul>
                         <h4>Desarrolladora Web</h4>
                             <h5>Accentur - a distancia</h5>
@@ -159,9 +169,40 @@
                 
             </div>
         </div>
+        <footer>
+            <div class="footer-section">
+
+                <div class="image-footer">
+                    <img src="/assets/logo_size.jpg" alt="logo">
+                </div>
+
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <i class="fa-brands fa-facebook social"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <i class="fa-brands fa-twitter social"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <i class="fa-brands fa-instagram social"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 VS Web Developer- Todos los derecho reservados.</p>
+                </div>
+            </div>
+        </footer>
 
     </section>
-
+    
     <script src="index.js"></script>
 </body>
 </html>
